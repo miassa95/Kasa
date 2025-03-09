@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./App.css";
+import "../App.css";
 
 const Collapse = ({ title, content }) => {
 const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const ref= useRef ()
             opacity: isOpen ? 1 : 0,
             maxHeight: isOpen ?(ref.current.offsetHeight +10) +"px" : "0px",
             overflow: "hidden",
-            padding:"10px" ,
+            padding:"15px" ,
             transition: "300ms"
 
           }}

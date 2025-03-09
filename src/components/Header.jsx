@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 
-function Menu() {
+function Header() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false); 
 
   return (
-    <header className="menu">
+    <header className="header">
       <nav>
         {/* Logo */}
         <img src="/image/LOGO KASA.png" alt="Logo Kasa" className="logo" />
@@ -40,4 +40,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Header;

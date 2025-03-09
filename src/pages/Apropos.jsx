@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Hero from "./Hero";
-import Footer from "./footer";
-import Collapse from "./Collapse";
-import "./App.css";
+import Hero from "../components/Hero";
+import Collapse from "../components/Collapse";
+import "../App.css";
 
 const Apropos = () => {
   const [sections, setSections] = useState([]);
@@ -22,7 +21,7 @@ const Apropos = () => {
           <Collapse key={index} title={section.title} content={section.content} />
         ))}
       </div>
-      <Footer />
+     
     </div>
   );
 };

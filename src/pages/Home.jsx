@@ -1,10 +1,8 @@
 
 import React, { useEffect, useState } from "react";
-import Hero from "./Hero";
-import Card from "./Card";
-import Footer from "./footer";
-import image1 from "../public/image/imgkasa1.png";
-import "./App.css";
+import Hero from "../components/Hero";
+import Card from "../components/Card";
+import "../App.css";
 
 function Home() {
     const [appartements, setAppartements] = useState([]);
@@ -25,7 +23,7 @@ function Home() {
   return (
     <div className="container">
      
-     <Hero image={image1} text="Chez vous, partout et ailleurs" />
+     <Hero image="/image/imgkasa1.png"  text="Chez vous, partout et ailleurs" />
 
       <div className="cards-container">
         <div className="grid">
@@ -40,7 +38,7 @@ function Home() {
         ))}
         </div>
       </div>
-      <Footer />
+      
 
     </div>
     
