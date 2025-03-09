@@ -53,7 +53,7 @@ const Apartment = () => {
           </div>
         </div>
 
-        <Rating rating={property.rating} /> {/* ✅ Utilisation du composant Rating */}
+        <Rating rating={property.rating} /> {/* Utilisation du composant Rating */}
 
 
         <div className="property-details-container">

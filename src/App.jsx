@@ -1,26 +1,27 @@
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Apropos from "./pages/Apropos";
+import Error404 from "./pages/Error404";
+import Apartment from "./pages/Apartment";
 
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./home"
-import Apropos from "./Apropos";
-import Menu from "./Menu";
-import Error404 from "./Error404";
-import Slideshow from "./Slideshow"; 
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
     return(
         <BrowserRouter>
-           <Menu /> 
+           <Header /> 
            <div className="page-container"> 
         <Routes>
             <Route path="/" element={<Home/>} /> 
             <Route path="/apropos" element={<Apropos />} />
-            <Route path="/property/:id" element={<Slideshow />} />
+            <Route path="/property/:id" element={<Apartment />} />
             <Route path="*" element={<Error404 />} />
         </Routes>
         </div>
+        <Footer />
         </BrowserRouter>
         
     )

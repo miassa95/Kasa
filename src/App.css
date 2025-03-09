@@ -16,8 +16,8 @@ body {
 }
 
 
-/* ---- MENU ---- */
-.menu {
+/* ---- HEADER ---- */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,19 +28,19 @@ body {
   padding: 0 20px;
 }
 
-.menu nav {
+.header nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 } 
 
-.menu .logo {
+.header .logo {
   width: 210px;
   height: 68px;
 }
 
-.menu ul {
+.header ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 
-.menu ul li a {
+.header ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -63,7 +63,7 @@ body {
   height: 34px;
 }
 
-.menu ul li a.active {
+.header ul li a.active {
   text-decoration: underline;
 }
 
@@ -199,14 +199,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 90vh;
+ 
 }
 
 .accordion {
   width: 100%;
   max-width: 1023px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .apropos-section {
@@ -592,26 +592,26 @@ ul   {
 /* Version responsive */
 
 @media screen and (max-width: 768px) {
-  .menu {
+  .header {
     padding: 0 10px;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .menu .logo {
+  .header .logo {
     width: 145px;
     height: 46px;
   }
 
-  .menu ul {
+  .header ul {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
     padding-right: 30px;
   }
 
-  .menu ul li a {
+  .header ul li a {
     font-size: 14px;
     width: auto;
     padding: 5px 10px;
@@ -620,7 +620,6 @@ ul   {
   .hero {
     height: 111px;
     width: 336px;
-    margin-bottom: 10px;
     padding: 12px;
   }
 
@@ -836,9 +835,9 @@ ul   {
 .rating {
   display: flex;
     align-items: center;
-    justify-content: flex-start; /* aligner à gauche */
+    justify-content: flex-start; 
     position: relative;
-    top: -40px; /* ajuste légèrement pour être aligné sur la même ligne que host-info */
+    top: -40px; 
   
  }
 
@@ -846,10 +845,10 @@ ul   {
   display: flex;
   
   align-items: center;
-  justify-content: flex-end; /* alignement à droite */
+  justify-content: flex-end; 
   gap: 10px;
   text-align: right;
-  align-self: flex-end; /* positionné à droite */
+  align-self: flex-end; 
 }
 
 .host-info p {
@@ -860,14 +859,10 @@ ul   {
 }
 
 
-
-
 /********************Collapse*************************/
  .collapse,
- .collapsible-section-wrapper,
- .property-details-container {
-   max-width: 335px; 
-   margin: 10px auto; 
+ .collapsible-section-wrapper{
+   margin: 10px; 
  }
 
  .collapse__header,
@@ -881,30 +876,12 @@ ul   {
  .property-details-container {
   flex-direction: column;
   gap: 10px; 
+  margin: 0;
 }
 
 .property-details-container .section {
   width: 100%; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 } 
 /*********************************************/
